@@ -1,0 +1,15 @@
+a = 'абвгґдеєжзиіїйклмнопрстуфхцчшщьюяа'
+
+st = input("Введіть рядок, який хочете зашифрувати >>")
+
+k = int(1)
+
+newst = ''
+for i in range(len(st)):
+    if (st[i] in a) == True:
+       n = a.find(st[i])
+       newst += a[n+1]
+    else:
+        newst+=st[i]
+
+print("Text >>", newst)
