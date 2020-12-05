@@ -1,0 +1,7 @@
+x = input("Введіть текст >>")
+y = input("Оберіть блок a/b >>")
+
+if y == 'a':
+    x = sorted(x)
+    print(x)
+elif y == 'b':
